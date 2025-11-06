@@ -14,65 +14,68 @@ import { HeroBanner } from '@/components/home/HeroBanner';
 import { ProjectsSection } from '@/components/home/ProjectsSection';
 
 import img from '../components/assets/product/11111.jpg'
-import img1 from '../components/assets/product/12.png'
-import img2 from '../components/assets/product/13.png'
+import img1 from '../components/products/17.jpg'
+import img2 from '../components/products/19.jpg'
 import img3 from '../components/assets/product/14.png'
 import img4 from '../components/assets/product/15.png'
 import img5 from '../components/assets/product/16.png'
 const mockProducts = [
   {
     id: '1',
-    name: "Каракплпакские  чапан",
-    nameEn: 'Материал шерсть',
+    name: "Qoraqalpoq ayollar choponi",
+    nameEn: 'Qoraqalpoq ayollar choponi',
     nameRu: 'Каракалпакские орнаменты',
-    price: 700000,
+    price: 1000000,
     image: img,
     description: "Стандарт",
+    minidesc: "Naqishlari: Qo'lida kashtalangan",
   },
   {
     id: '2',
-    name: '',
-    nameEn: '',
-    nameRu: 'Керамическая посуда',
-    price: 220000,
+    name: 'Qoraqalpoq jaketlar',
+    nameEn: 'Qoraqalpoq jaketlar',
+    nameRu: 'Черные куртки',
+    price: 500000,
     image: img1,
-    description: "Стандарт",
+    description: "Koreyski Velur",
+    minidesc: "Naqishlari: Ipak Iplar bilan tikilgan",
   },
   {
     id: '3',
-    name: '',
-    nameEn: '',
-    nameRu: 'Керамическая посуда',
-    price: 320000,
+    name: 'Бешпент',
+    nameEn: 'Beshpent',
+    nameRu: 'Бешпент',
+    price: 1000000,
     image: img2,
-    description: "Стандарт",
+    description: "Kорейски Велур",
+    minidesc: "Naqishlari: Kора Kолпак Накишлари",
   },
   {
     id: '4',
-    name: '',
-    nameEn: '',
-    nameRu: 'Керамическая посуда',
-    price: 320000,
+    name: 'Qoroqolpoq Naqish tushirilgan jaket',
+    nameEn: 'Qoroqolpoq Naqish tushirilgan jaket',
+    nameRu: 'Вышитая куртка',
+    price: 500000,
     image: img3,
-    description: "Стандарт",
+    description: "Barxit material",
   },
   {
     id: '5',
-    name: '',
-    nameEn: '',
-    nameRu: 'Керамическая посуда',
-    price: 200000,
+    name: 'Qoroqolpoq Naqish tushirilgan jaket',
+    nameEn: 'Qoroqolpoq Naqish tushirilgan jaket',
+    nameRu: 'Вышитая куртка',
+    price: 500000,
     image: img4,
-    description: "Стандарт",
+    description: "Barxit material",
   },
   {
     id: '6',
-    name: '',
-    nameEn: '',
-    nameRu: 'Керамическая посуда',
-    price: 250000,
+    name: 'Shyfon kuylak',
+    nameEn: 'Shyfon kuylak',
+    nameRu: 'Шифоновое платье',
+    price: 1200000,
     image: img5,
-    description: "Стандарт",
+    description: "Astarli biser bilan bezagan qo'l ishi",
   },
 ];
 
@@ -137,6 +140,7 @@ const Index = () => {
               price={product.price}
               image={product.image}
               description={product.description}
+              minidesc={product.minidesc}
             />
           ))}
         </div>
